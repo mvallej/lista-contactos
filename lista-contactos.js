@@ -6,11 +6,15 @@ const addContact = (contact) => {
 addContact("Camila Rodriguez");
 console.log(contacts);
 
-const deleteContact = (a, b) => {
-  console.log(contacts.splice(a, b));
-  return contacts;
+const deleteContact = (nombre) => {
+  const contactosActualizados = contacts.filter((name)=> { 
+    if (name !== nombre) {return name
+    }
+  })
+  // console.log(contacts.splice(a, b));
+  return contactosActualizados;
 };
-console.log(deleteContact(contacts.length - 1, 1));
+console.log(deleteContact("Carlos Gomez"));
 
 const imprimeContacts = () => {
   return contacts;
