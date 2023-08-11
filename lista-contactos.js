@@ -12,6 +12,7 @@ const deleteContact= (a,b) =>{
 }
 console.log(deleteContact(contacts.length-1,1));
 
+
 const imprimeContacts= () =>{
     return contacts
 }
