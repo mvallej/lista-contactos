@@ -13,47 +13,16 @@ ubicaciones: {ciudad, direccion}
  add(78, "Felix", 457473, "Bogota", "nororiente");
  console.log(contacts);
 
-// const deleteContact= (a,b) =>{
-//     console.log(contacts.splice(a,b))
-//     return contacts
-// }
-// console.log(deleteContact(contacts.length-1,1));
+const deleteContact= (a,b) =>{
+    console.log(contacts.splice(a,b))
+    return contacts
+}
+console.log(deleteContact(contacts.length-1,1));
 
-// const imprimeContacts= () =>{
-//     return contacts
-// }
+const imprimeContacts= () =>{
+    return contacts
+}
 
-// console.log(imprimeContacts())
-
-
+console.log(imprimeContacts())
 
 
-
-// function add(id, name, apellido, ubicacion) {
-//   const objectUser = {
-//     id: id,
-//     name: name,
-//   };
-//   arrayContacts.push(objectUser);
-// }
-// Neider Urbano17:59
-// { 
-//     id: 1,
-//         name: "neider",
-//         mascotas: [1, 2, 3, 4, 5],
-//         ubicaciones: { 
-//         id: 1,
-//                 nombre: "Medellin"
-//         }    
-// }
-
-// function actualizarNombre(id, nuevoNombre, ubicaciones) {
-//   const contactosactualizados = contacts.map((contact) => {
-//     if (contact.id == id) {
-//       return {
-//         ...contact,
-//         ubicaciones: ubicaciones,
-//       };
-//     }
-//   });
-// }
